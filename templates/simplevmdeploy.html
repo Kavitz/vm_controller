@@ -1,0 +1,220 @@
+<div class="headingrow">
+		<span>Simple VM Deploy</span>
+</div>
+<div style="overflow-x: hidden;overflow-y: scroll;height: calc(100vh - 180px);">
+	<div class="group-div">
+		<div class="row formrow">
+			<div class="col-sm-4 formlabel">
+				<label>Resource Configuration:</label>
+			</div>
+			<div class="col-sm-8">
+				<select id="cloudsim" style="width:200">
+					<option>cloudsim-104-ldc-private-OMSDEV-OCS-rcfg</option>
+					<option>cloudsim-104-ldc-private-OMSDEV-PHN-rcfg</option>
+					<option>cloudsim-90-ldc-private-OMSDEV-OCS-rcfg</option>
+					<option>cloudsim-90-ldc-private-OMSDEV-PHN-rcfg</option>
+				</select>		
+			</div>
+		</div>
+
+		<div class="row formrow">
+			<div class="col-sm-4 formlabel">
+				<label>File System:</label>
+			</div>
+			<div class="col-sm-8">
+				<select id="cloudsim" style="width:200">
+					<option>root</option>
+					<option>MH/test</option>
+					<option>MH/test/oms</option>
+					<option>MH/cloudsim/test</option>
+				</select>		
+			</div>
+		</div>
+	</div>
+	<div class="group-div">
+		<div class="row formrow">
+			<div class="col-sm-4 formlabel">
+				<label>VM Name:</label>
+			</div>
+			<div class="col-sm-8">
+				<input type="text" name="">
+			</div>
+		</div>
+		<div class="row formrow">
+			<div class="col-sm-4 formlabel">
+				<label>Enable Valgrind:</label>
+			</div>
+			<div class="col-sm-8">
+				<input type="checkbox" id="eanbleVal" name="">
+				<label for="eanbleVal" class="check-btn"></label>
+			</div>
+		</div>
+		<div class="row formrow">
+			<div class="col-sm-4 formlabel">
+				<label>GMRE Build:</label>
+			</div>
+			<div class="col-sm-8">
+				<input type="text" name="">
+			</div>
+		</div>
+		<div class="row formrow">
+			<div class="col-sm-4 formlabel">
+				<label>Node IP:</label>
+			</div>
+			<div class="col-sm-8">
+				<input type="text" name="">
+			</div>
+		</div>
+		<div class="row formrow">
+			<div class="col-sm-4 formlabel">
+				<label>Notify IP:</label>
+			</div>
+			<div class="col-sm-8">
+				<input type="text" name="">
+			</div>
+		</div>
+		<div class="row formrow">
+			<div class="col-sm-4 formlabel">
+				<label>Copy Locally:</label>
+			</div>
+			<div class="col-sm-8">
+				<input type="checkbox" id="copylocally" name="">
+				<label for="copylocally" class="check-btn"></label>
+			</div>
+		</div>
+		<div class="row formrow">
+			<div class="col-sm-4 formlabel">
+				<label>NFS Mount URL:</label>
+			</div>
+			<div class="col-sm-8">
+				<input type="text" name="" value="135.112.248.203://mnt/cloudsim/pssloads">
+			</div>
+		</div>
+		<div class="row formrow">
+			<div class="col-sm-4 formlabel">
+				<label>Auto Commission:</label>
+			</div>
+			<div class="col-sm-8">
+				<input type="checkbox" id="autocommision" name="">
+				<label for="autocommision" class="check-btn"></label>
+			</div>
+		</div>
+		<div class="row formrow">
+			<div class="col-sm-4 formlabel">
+				<label>Sim Boot Level:</label>
+			</div>
+			<div class="col-sm-8">
+				<select>
+					<option>Full</option>
+					<option>ECs</option>
+					<option>Master</option>
+					<option>Scripts</option>
+					<option>Drivers</option>
+					<option>GMRE</option>
+					<option>Load</option>
+					<option>None</option>
+				</select>
+			</div>
+		</div>
+		<div class="row formrow">
+			<div class="col-sm-4 formlabel">
+				<label>NE Build:</label>
+			</div>
+			<div class="col-sm-8">
+				<input type="text" name="" value="1830PSS-9.0-0">
+			</div>
+		</div>
+		<div class="row formrow">
+			<div class="col-sm-4 formlabel">
+				<label>LoopBack IP:</label>
+			</div>
+			<div class="col-sm-8">
+				<input type="text" name="">
+			</div>
+		</div>
+		<div class="row formrow">
+			<div class="col-sm-4 formlabel">
+				<label>Shelf Mode:</label>
+			</div>
+			<div class="col-sm-8">
+				<select>
+					<option>SONET</option>
+					<option>SDH</option>
+				</select>
+			</div>
+		</div>
+		<div class="row formrow">
+			<div class="col-sm-4 formlabel">
+				<label>Node TID:</label>
+			</div>
+			<div class="col-sm-8">
+				<input type="text" name="">
+			</div>
+		</div>
+		<div class="row formrow">
+			<div class="col-sm-4 formlabel">
+				<label>Master Shlef Type:</label>
+			</div>
+			<div class="col-sm-8">
+				<select>
+					<option>PSS32</option>
+					<option>PSS16</option>
+					<option>PSS24</option>
+				</select>
+			</div>
+		</div>
+		<div class="row formrow">
+			<div class="col-sm-4 formlabel">
+				<label>VM Host Name:</label>
+			</div>
+			<div class="col-sm-8">
+				<input type="text" name="" value="localhost">
+			</div>
+		</div>
+		<div class="row formrow">
+			<div class="col-sm-4 formlabel">
+				<label>IP Allocation Method:</label>
+			</div>
+			<div class="col-sm-8">
+				
+				<input type="radio" name="ipa" id="static">Static
+				<input type="radio" name="ipa" id="dhcp">DHCP
+				<input type="radio" name="ipa" id="transient">Transient
+			</div>
+		</div>
+		<div class="row formrow">
+			<div class="col-sm-4 formlabel">
+				<label>eth0 IP:</label>
+			</div>
+			<div class="col-sm-8">
+				<input type="text" name="">
+			</div>
+		</div>
+		<div class="row formrow">
+			<div class="col-sm-4 formlabel">
+				<label>VM Disk Mode:</label>
+			</div>
+			<div class="col-sm-8">
+				<select>
+					<option>Thin Provision</option>
+					<option>Thin Provision Lazy Zeroed</option>
+					<option>Thin Provision Eager Zeroed</option>
+				</select>
+			</div>
+		</div>
+		<div class="row formrow">
+			<div class="col-sm-4 formlabel">
+				<label>Enable RAM and CPU Configuration for this VM:</label>
+			</div>
+			<div class="col-sm-8">
+				<input type="checkbox" id="enableRAM" name="">
+				<label for="enableRAM" class="check-btn"></label>
+			</div>
+		</div>
+	</div>
+</div>
+<div style="overflow: hidden;overflow: hidden;margin-top: 8px;padding-right: 40px;/* border: 1px solid #dddddd; */">
+	<input type="button" id="submit" style="float: right" ng-click="deployVMpython()" value="Deploy python">
+	<input type="button" id="submit" style="float: right" ng-click="deployVMshell()" value="Deploy shell">
+</div>
+

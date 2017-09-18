@@ -1,0 +1,58 @@
+<i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+<div class="menu-list" style="margin-top: 14px;">
+	<ul id="menu-content" class="menu-content collapse out">
+    <li  data-toggle="collapse" data-target="#products" class="collapsed">
+    	<a href="#"><i class="fa fa-gift fa-lg"></i> Network Builder <span class="arrow"></span></a>
+    </li>
+    <ul class="sub-menu collapse" id="products">
+      <li ui-sref-active="activestate">
+      	<a ui-sref="home.simplevmdeploy">Simple VM Deploy</a>
+      </li>
+      <li ui-sref-active="activestate">
+      	<a ui-sref="home.deployconfiguration">Deploy Configuration</a>
+      </li>
+      <li ui-sref-active="activestate">
+      	<a ui-sref="home.manageconfiguration">Manage Configurations</a>
+      </li>
+      <li ui-sref-active="activestate">
+      	<a ui-sref="home.managecloudsim">Manage Cloudsim VMs</a>
+      </li>
+      <li ui-sref-active="activestate">
+      	<a ui-sref="home.deployments">Deployments</a>
+      </li>
+      <li ui-sref-active="activestate">
+      	<a ui-sref="home.migrations">Migrations</a>
+      </li>
+      <li ui-sref-active="activestate">
+      	<a ui-sref="home.upgrades">Upgrades</a>
+      </li>
+    </ul>
+		<li data-toggle="collapse" data-target="#service" class="collapsed">
+      <a href="#"><i class="fa fa-globe fa-lg"></i> vSphere <span class="arrow"></span></a>
+    </li>  
+    <ul class="sub-menu collapse" id="service">
+      <li ui-sref-active="activestate">
+      	<a ui-sref="home.manageovf">OVF Templates</a>
+      </li>
+      <li ui-sref-active="activestate">
+      	<a ui-sref="home.manageresourceconfiguarion" ui-sref-active="activestate">Resource Configurations</a>
+      </li>
+      <li>
+      	<a ui-sref="home.manageupgradearchives" >Upgrade Archives</a>
+      </li>
+      <li>
+      	<a ui-sref="home.managevcenters" >vCenters</a>
+      </li>
+    </ul>
+    <li>
+      <a href="#">
+	      <i class="fa fa-users fa-lg"></i><a ui-sref="home.managsuser">Manage Users</a>
+      </a>
+    </li>
+		<li>
+      <a href="#">
+        <i class="fa fa-cog fa-lg"></i><a ui-sref="home.setting">Settings</a>
+      </a>
+    </li>     
+	</ul>
+</div>

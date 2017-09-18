@@ -1,0 +1,105 @@
+<div class="headingrow">
+      <span>Manage OVF Template</span>
+</div>
+<div class="modal fade" id="myModaladd" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header headingrow">
+        <span>Add OVF</span>
+      </div>
+      <div class="modal-body">
+        <div class="row formrow">
+          <div class="col-sm-4 formlabel">
+            <label>Name:</label>
+          </div>
+          <div class="col-sm-8">
+            <input type="text" name="">
+          </div>
+        </div>
+        <div class="row formrow">
+          <div class="col-sm-4 formlabel">
+            <label>OVF URL:</label>
+          </div>
+          <div class="col-sm-8">
+            <input type="text" name="">
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <input type="button" class="btn btn-default" data-dismiss="modal" value="Close">
+        <input type="button" class="btn btn-primary saveChange" Value="Add">
+      </div>
+    </div>
+  </div>
+</div>
+<div style="overflow-x: hidden;overflow-y: scroll;height: calc(100vh - 180px);">
+  <table class="table table-bordered table-striped table-hover">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Product</th>
+        <th>Version</th>
+        <th style="width:100px;">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>cloudsim-wdm-4.6.2</td>
+        <td>Cloudsim-ALUWDM</td>
+        <td>4.62</td> 
+        <td style="width:100px;"><center><a href="#" title="Edit" style="padding-right: 12px;"><i class="fa fa-edit"></i></a><a href="#" title="Delete"><i class="fa fa-trash-o"></i></a></center></td>
+      </tr>
+      <tr>
+        <td>cloudsim-wdm-4.2</td>
+        <td>Cloudsim-ALUWDM</td>
+        <td>4.2</td>
+        <td style="width:100px;"><center><a href="#" title="Edit" style="padding-right: 12px;"><i class="fa fa-edit"></i></a><a href="#" title="Delete"><i class="fa fa-trash-o"></i></a></center></td>
+      </tr>
+      <tr>
+        <td>cloudsim-wdm-5.0</td>
+        <td>Cloudsim-ALUWDM</td>
+        <td>5.0</td>
+        <td style="width:100px;"><center><a href="#" title="Edit" style="padding-right: 12px;"><i class="fa fa-edit"></i></a><a href="#" title="Delete"><i class="fa fa-trash-o"></i></a></center></td>
+      </tr>
+      <tr>
+        <td>cloudsim-wdm-5.1.2</td>
+        <td>Cloudsim-ALUWDM</td>
+        <td>5.1.2</td>
+        <td style="width:100px;"><center><a href="#" title="Edit" style="padding-right: 12px;"><i class="fa fa-edit"></i></a><a href="#" title="Delete"><i class="fa fa-trash-o"></i></a></center></td>
+      </tr>
+      <tr>
+        <td>cloudsim-wdm-6.0.1</td>
+        <td>Cloudsim-ALUWDM</td>
+        <td>6.0.1</td>
+        <td style="width:100px;"><center><a href="#" title="Edit" style="padding-right: 12px;"><i class="fa fa-edit"></i></a><a href="#" title="Delete"><i class="fa fa-trash-o"></i></a></center></td>
+      </tr>
+      <tr>
+        <td>cloudsim-wdm-5.3.2</td>
+        <td>Cloudsim-ALUWDM</td>
+        <td>5.3.2</td>
+        <td style="width:100px;"><center><a href="#" title="Edit" style="padding-right: 12px;"><i class="fa fa-edit"></i></a><a href="#" title="Delete"><i class="fa fa-trash-o"></i></a></center></td>
+      </tr>
+      <tr>
+        <td>cloudsim-wdm-spirit</td>
+        <td>Cloudsim-ALUWDM</td>
+        <td>6.0</td>
+        <td style="width:100px;"><center><a href="#" title="Edit" style="padding-right: 12px;"><i class="fa fa-edit"></i></a><a href="#" title="Delete"><i class="fa fa-trash-o"></i></a></center></td>
+      </tr>
+      <tr>
+        <td>cloudsim-ocs-1.1.2</td>
+        <td>Cloudsim-ALUOCS</td>
+        <td>1.1.2</td>
+        <td style="width:100px;"><center><a href="#" title="Edit" style="padding-right: 12px;"><i class="fa fa-edit"></i></a><a href="#" title="Delete"><i class="fa fa-trash-o"></i></a></center></td>
+      </tr>
+      <tr>
+        <td>cloudsim-5.3.2-final</td>
+        <td>Cloudsim-ALUWDM</td>
+        <td>5.3.2</td>
+        <td style="width:100px;"><center><a href="#" title="Edit" style="padding-right: 12px;"><i class="fa fa-edit"></i></a><a href="#" title="Delete"><i class="fa fa-trash-o"></i></a></center></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div style="overflow: hidden;overflow: hidden;margin-top: 8px;padding-right: 40px;/* border: 1px solid #dddddd; */">
+  <input type="button" id="submit" style="float: right" data-toggle="modal" data-target="#myModaladd" value="Add OVF Template">
+</div>

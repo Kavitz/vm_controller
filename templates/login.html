@@ -1,0 +1,22 @@
+<div class="col-md-12">
+  <form ng-submit="formSubmit()" class="form">
+    <div class="container h100v">
+      <div class="logincontent effect">
+        <div class="logo"></div>
+        <div style="margin-bottom:35px;">
+          <h1 class="product">Virtual 1830</h1>
+        </div>
+        <div class="input-fields">
+          <input type="text" name="" required="" autofocus placeholder="username" ng-model="username" style="margin-right: 30px;min-width: 35px;">
+          <input type="password" name="" required="" ng-model="password" placeholder="password" style="min-width: 35px;"> 
+        </div>
+        <div style="margin-top:10px;float: right;">
+          <button type="submit" id="loginButton">Log In</button>
+          <span class="text-danger">{{ error }}</span>
+        </div>
+      </div>
+      <p class="copy-right">&copy; 2017 Nokia. All rights reserved.</p>
+    </div> 
+
+  </form>
+</div>
