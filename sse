@@ -1,0 +1,65 @@
+var SSE = require('sse')
+  , http = require('http');
+ 
+var server = http.createServer(function(req, res) {
+  res.writeHead(200, {'Content-Type': 'text/plain'});
+  res.end('okay');
+});
+ 
+server.listen(3000, 'localhost', function() {
+  var sse = new SSE(server);
+  sse.on('connection', function(client) {
+    var id = setInterval(function() {
+        client.send(JSON.stringify(process.memoryUsage()));
+      }, 1000);
+      console.log('started client interval');
+      client.on('close', function() {
+        console.log('stopping client interval');
+        clearInterval(id);
+      });
+  });
+});
+// var SSE = require('sse');
+// var express = require('express');
+// var app = express();
+
+
+// var sse = new SSE(app);
+// sse.on('connection', function(client) {
+// var id = setInterval(function() {
+//   client.send(JSON.stringify(process.memoryUsage()));
+// }, 100);
+// console.log('started client interval');
+// client.on('close', function() {
+//   console.log('stopping client interval');
+//   clearInterval(id);
+// })
+// });
+
+//  app.listen(8080);
+// var express = require('express');
+// var app = express();
+// var cors = require('cors')
+// let sseExpress = require('sse-express');
+// var route = express.Router();
+// app.use(function(req, res, next) {
+//     res.header("Access-Control-Allow-Origin", "*");
+//     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+//     next();
+//   });
+// app.get('/', function (req, res) {
+//   res.send('Hello World')
+// })
+// route.get('/updates', sseExpress, function(req, res) {
+//     res.sse({
+//         event: 'connected',
+//         data: {
+//           welcomeMsg: 'Hello world!'
+//         }
+//     });
+// });
+// app.use(cors());
+// app.use('/api', route);
+// app.listen(3000);
+
+
